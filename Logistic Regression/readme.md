@@ -1,4 +1,4 @@
-# Logistic Regression模型实验
+# Logistic Regression Model Experiment
 
 ## 编程环境
 
