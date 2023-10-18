@@ -107,10 +107,10 @@ if __name__ == '__main__':
             if best_roc_auc < roc_auc:
                 best_roc_auc = roc_auc
                 best_epoch = epoch
-                best_model_weights = torch.save(model,"nima.pth")
+                best_model_weights = torch.save(model,"wocenima.pth")
 
         # 测试阶段
-        model = torch.load("nima.pth")
+        model = torch.load("wocenima.pth")
         X_Test_tensor = torch.tensor(Test_data, dtype=torch.float32).to(device)
         y_Test_tensor = torch.tensor(Test_label, dtype=torch.float32).to(device)
         Test_outputs = model(X_Test_tensor)[:, 0]
